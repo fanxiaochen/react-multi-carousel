@@ -26,17 +26,14 @@
   position: absolute;
   outline: none;
   transition: all 0.5s;
-  border-radius: 35px;
   z-index: 1000;
   border: none;
-  background: rgba(0, 0, 0, 0.5);
-  min-width: 43px;
+  background: transparent;
+  min-width: 24px;
   min-height: 43px;
+  height: 100%;
   opacity: 1;
   cursor: pointer;
-}
-.react-multiple-carousel__arrow:hover {
-  background: rgba(0, 0, 0, 0.8);
 }
 .react-multiple-carousel__arrow::before {
   font-size: 20px;
@@ -53,16 +50,20 @@
 }
 
 .react-multiple-carousel__arrow--left {
-  left: calc(4% + 1px);
+  left: 0px;
+  background: linear-gradient(to left,rgba(37,38,39,0),#252627);
 }
 .react-multiple-carousel__arrow--left::before {
   content: "\e824";
+  left: -5px;
 }
 .react-multiple-carousel__arrow--right {
-  right: calc(4% + 1px);
+  right: 0px;
+  background: linear-gradient(to right,rgba(37,38,39,0),#252627);
 }
 .react-multiple-carousel__arrow--right::before {
   content: "\e825";
+  right: -5px;
 }
 
 .react-multi-carousel-dot-list {
